@@ -43,7 +43,8 @@ void Account::init(void) {
         Serial.println("Public:");
         Serial.println(publicKey);
         Serial.println("Private:");
-        Serial.println(privateKey);
+        Serial.println("[hidden]")
+        //Serial.println(privateKey);
     } 
 }
 
@@ -86,7 +87,7 @@ void Account::createAlgorandPrivateKey(const uint8_t *private_key, const uint8_t
     base64 base64;
     String private_key_encoded = base64.encode(combined_private, sizeof(combined_private));
 
-    Serial.println(F("PrivateKey:"));
+    Serial.println(F("PrivateKey:"));    
     Serial.println(private_key_encoded);
     this->privateKey = private_key_encoded;
     NVS.setString(PRI_KEY, private_key_encoded);

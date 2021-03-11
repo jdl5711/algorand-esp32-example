@@ -7,7 +7,7 @@
 // ESP32 DevKit v1 is 2
 const int LED_PIN = 2;
 //The rate (in milliseconds) that the LED will flash
-const int FAST_LED = 500;
+const int FAST_LED = 350;
 const int SLOW_LED = 1200;
 
 TaskHandle_t ledTaskHandle = NULL;
