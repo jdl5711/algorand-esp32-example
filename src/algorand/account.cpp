@@ -43,7 +43,7 @@ void Account::init(void) {
         Serial.println("Public:");
         Serial.println(publicKey);
         Serial.println("Private:");
-        Serial.println("[hidden]")
+        Serial.println("[hidden]");
         //Serial.println(privateKey);
     } 
 }
